@@ -83,6 +83,16 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+
+# Misc packages and Config
+PRODUCT_PACKAGES += \
+    SakuraSettings \
+    RepainterServicePriv 
+
+# Navigation
+PRODUCT_PACKAGES += \
+    ImmersiveNavigationOverlay   
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
@@ -220,8 +230,6 @@ $(call inherit-product, vendor/aosp/config/fonts.mk)
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
 
-# OTA
-$(call inherit-product, vendor/aosp/config/ota.mk)
 
 # RRO Overlays
 $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
