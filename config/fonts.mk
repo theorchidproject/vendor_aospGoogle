@@ -57,3 +57,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/aosp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/ttf,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
+
+#Custom packages
+PRODUCT_PACKAGES += \
+    FontInterOverlay \
+    FontGInterOverlay \
+    FontGoogleSansOverlay \
+    FontLinotteSourceOverlay \
+    FontManropeOverlay \
+    FontOnePlusSansOverlay \
+    FontOneplusSlateSourceOverlay \
+    FontOneUISansOverlay
