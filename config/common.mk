@@ -3,6 +3,9 @@ $(call inherit-product, vendor/aosp/config/branding.mk)
 
 PRODUCT_BRAND ?= PixelExperience
 
+# OrchidOs build config
+SELINUX_IGNORE_NEVERALLOWS=true
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
