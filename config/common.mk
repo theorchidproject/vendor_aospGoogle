@@ -1,7 +1,8 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
-$(call inherit-product-if-exists, vendor/bromite_system_inline/bromite.mk)
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+$(call inherit-product, vendor/aosp/bromite_system_inline/bromite.mk)
+$(call inherit-product, vendor/aosp/lawnchair/lawnchair.mk)
+$(call inherit-product, vendor/aosp/addons/addons.mk)
 
 
 PRODUCT_BRAND ?= PixelExperience

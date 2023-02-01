@@ -1,5 +1,5 @@
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/lineage/orchidoscore/bromite_system_inline
+    vendor/aosp/bromite_system_inline
 
 PRODUCT_PACKAGES += \
   BromiteWebView \
